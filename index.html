@@ -1,1 +1,143 @@
-hello html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body {
+        margin: 16px;
+    }
+    header, main {
+        margin-bottom: 1rem;
+    }
+    footer {
+        background: #cacaca;
+        padding: 3rem 0 0.2rem 0;
+        text-align: center;
+    }
+    footer a {
+        text-decoration: none;
+    }
+    .h1ttl {
+        padding: 1rem 0;
+        font-weight: normal;
+        text-align: center;
+        font-size: 25px;
+        background-color: #a6a6a6;
+    }
+    .nav-area {
+        background-color: #c6c6c6;
+        padding: 1rem 0;
+        font-size: 12px;
+    }
+    .global-nav {
+        display: block;
+        margin: auto;
+        width: 130px;
+    }
+    .global-nav ul {
+        margin: 0;
+    }
+    .global-nav li a {
+        text-decoration: none;
+    }
+    main {
+        background-color: #111;
+        padding: 0.5rem;
+    }
+    .section-article, .section-project {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .section-article {
+        width: 60%;
+    }
+    .section-project {
+        width: 33%;
+    }
+    .section-common {
+        padding: 0.5rem 1rem;
+        background: #7a7a7a;
+        margin: 0.5rem;
+        height: 520px;
+    }
+    .article p {
+        font-size: 12px;
+    }
+    .article-img {
+        margin-top: 1rem;
+    }
+    .section-detail-common {
+        background: #d0d0d0;
+        padding: 0.5rem 1rem;
+        border: 2px solid #00f;
+        margin: 1rem 0;
+    }
+    .section-detail-img {
+        border: 1px solid #00f;
+        width: 31%;
+    }
+    .section-title {
+        font-weight: bold;
+        font-size: 23px;
+        text-align: center;
+        padding: 1rem;
+    }
+    .project-detail{
+        height: 73%;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .project-detail ul {
+        padding: 0 1rem;
+        color: #f00;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class ="header-area">
+            <div class="h1ttl">PAGE TITLE</div>
+            <div class="nav-area">
+                <nav class="global-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class ="section-article section-common">
+            <div class="article section-detail-common">
+                <div class="section-title">Article One</div>
+                <p>Mario Kart is a colorful racing game series set in the whimsical world of the Mushroom Kingdom. Players race as iconic Nintendo characters, each with unique karts and abilities. Tracks are filled with imaginative landscapes, from lush forests to space stations, and loaded with hazards. Power-ups like shells, bananas, and speed boosts add chaos and strategy to the competition. The goal is simple: cross the finish line first while dodging traps and outsmarting rivals.</p>
+            </div>
+            <div class="article-img">
+                <img class="section-detail-img" src="./248478.jpg" alt="mario Image">
+                <img class="section-detail-img" style="margin: 0 1.3rem;" src="./248478.jpg" alt="mario Image">
+                <img class="section-detail-img" src="./248478.jpg" alt="mario Image">
+            </div>
+        </section>
+        <section class="section-project section-common">
+            <div class ="section-title section-detail-common">Projects</div>
+            <div class="project-detail section-detail-common">
+                <ul>
+                    <li>December 2025</li>
+                    <li>November 2024</li>
+                    <li>October 2023</li>
+                    <li>September 2022</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website | <a href="#privacy">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
